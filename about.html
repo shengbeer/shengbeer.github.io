@@ -29,8 +29,49 @@
     </nav>
     <section id="w">
         <h2>御马天下是一个集体育赛事和志愿服务于一体的机构</h2>
-    <p >Welcome to the official website of Jay Skript and the Domsters.
-        about the baand et in touch with the ban
+   <p>
+        在CSS中设置元素居中的几种方法（在PC端一般通过绝对定位、负边距等方法，在移动端更倾向于使用flex）：
+        1.绝对定位和负边距
+        .box{position:relative;}
+        .box3 span{
+            position: absolute;
+            width:100px;
+            height: 50px;
+            top:50%;
+            left:50%;
+            margin-left:-50px;
+            margin-top:-25px;
+            text-align: center;
+        }
+        2.绝对定位和0
+        
+        .box4 span{
+          width: 50%; 
+          height: 50%; 
+          background: #000;
+          overflow: auto; 
+          margin: auto; 
+          position: absolute; 
+          top: 0; left: 0; bottom: 0; right: 0; 
+        }
+        3.translate
+        .box6 span{
+            position: absolute;
+            top:50%;
+            left:50%;
+            width:100%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+        }
+        4.display:flex
+         .box2{
+            display: flex;
+            justify-content:center;
+            align-items:Center;
+        }
+        
+  
+    </p>
     </section>
     <section id="s">
         <p>
